@@ -1,0 +1,158 @@
+.bubbles--block {
+  background-color: #8EBFC5;
+  position: relative;
+  width: 100%;
+  min-height: 60px;
+  font-family: Ubuntu, sans-serif;
+  color: #0F3674;
+  opacity: 1;
+}
+
+.floating {
+  color: #0F3674;
+  position: absolute;
+  height: 100px;
+  bottom: 0;
+  width: 100px;
+  z-index: 150;
+  pointer-events: none;
+}
+
+i {
+  display: block;
+  //left: 50px;
+  width: 50px;
+  height: 50px;
+  animation-name: vertical-move;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  border-radius: 50%;
+  opacity: .5;
+}
+
+@keyframes vertical-move {
+  0% {
+    transform: translateY(0);
+  }
+  65% {
+      transform: translateY(20px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+b {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  opacity: .5;
+  animation-name: horizontal-move;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  background-color: #fff;
+}
+
+
+@keyframes horizontal-move {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(25px);
+}
+100% {
+    transform: translateX(0);
+  }
+}
+
+.circle__moving {
+  position: absolute;
+  margin: 0;
+  transform: scale(0.95);
+  opacity: .8;
+  filter: blur(0.03em);
+}
+
+.circle__moving--1 {
+  top: 90%;
+  right: -1535%;
+}
+
+.circle__moving--2 {
+  top: 220%;
+  right: -1230%;
+
+  i {
+    width: 30px;
+    height: 30px;
+    
+    b {
+      width: 30px;
+      height: 30px;
+      opacity: .5;
+      filter: blur(0.10px);
+      transform: scale(1.2);
+      
+    }
+  }
+}
+
+.circle__moving--3 {
+  top: 120%;
+  right: -940%;
+
+  i {
+    width: 55px;
+    height: 55px;
+    
+
+    b {
+      width: 55px;
+      height: 55px;
+      opacity: 1;
+      animation-delay: -.15s;
+      animation-duration: 9s;
+      transform: scale(1.1);
+      filter: blur(0.15px);
+    }
+  }
+}
+
+main {
+  min-width: 100%;
+  min-height: 889px;
+  background-color: #8EBEC5;
+  
+}
+
+.home--link {
+
+  &::after {
+    
+    content: "";
+    min-width: 854px;
+    min-height: 854px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    bottom: -283px;
+    left: 58px;
+  }
+}
+
+.test {
+  display: block;
+}
+
+.main--logo {
+  position: absolute; 
+  z-index: 999;
+  width: 380px;
+  top: 480px;
+  left: 343px;
+} 

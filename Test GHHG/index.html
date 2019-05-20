@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <title>GHHG</title>
+  
+</head>
+<body>
+  <header>
+    <div class="member">
+      <img src="img/GHH_Logo-black.png" alt="member-logo">
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">News &amp; Events</a></li>
+        <li><a href="#" class="nav__sign-up">Sing up</a></li>
+      </ul>
+      <div class="language__switcher--wrapper">
+        <ul>
+          <li><a href="#">en</a></li>
+          <li><a href="#">de</a></li>
+        </ul>
+      </div> 
+    </nav>
+    
+  </header>
+
+<!------------------- Start MAIN   ---------------------->
+  <main>
+    <div class="bubbles--block">
+      <div class="floating">
+        <p class="circle__moving circle__moving--1">
+          <i>
+            <b></b>
+          </i>
+        </p>
+        <p class="circle__moving circle__moving--2">
+          <i>
+            <b></b>
+          </i>
+        </p>
+        <p class="circle__moving circle__moving--3">
+          <i>
+            <b></b>
+          </i>
+        </p>
+      </div>
+    </div>
+    <div class="main--wrapper">
+      <a href="#" class="home--link">
+        <img src="img/logo.svg" class="main--logo" alt="GHHG-logo"/>
+      </a>
+    </div>
+  </main>
+</body>
+<script>
+  let testScroll = $(".home--link");
+  testScroll.on("scroll", function() {
+    testScroll.addClass('.test')
+  });
+</script>
+</html>
